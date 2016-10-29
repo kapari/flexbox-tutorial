@@ -37,4 +37,33 @@ a:hover {
   border: 1px solid black;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .flex-nav ul li {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3; }
+    .flex-nav ul li.social {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+
+@media all and (max-width: 1000px) {
+  .flex-nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .flex-nav ul li {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 50%;
+              flex: 1 1 50%; }
+      .flex-nav ul li.social {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 25%;
+                flex: 1 1 25%; } }
+
+@media all and (max-width: 500px) {
+  .flex-nav ul li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }

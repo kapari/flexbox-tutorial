@@ -35,4 +35,21 @@ a:hover {
   border: 1px solid black;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: flex; }
+  .flex-nav ul li {
+    flex: 3; }
+    .flex-nav ul li.social {
+      flex: 1; }
+
+@media all and (max-width: 1000px) {
+  .flex-nav ul {
+    flex-wrap: wrap; }
+    .flex-nav ul li {
+      flex: 1 1 50%; }
+      .flex-nav ul li.social {
+        flex: 1 1 25%; } }
+
+@media all and (max-width: 500px) {
+  .flex-nav ul li {
+    flex-basis: 100%; } }
