@@ -9,6 +9,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   overflow: hidden;
+  background-image: -webkit-linear-gradient(190deg, #2376ae 0%, #c16ecf 100%);
   background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%); }
 
 a {
@@ -53,14 +54,23 @@ a {
 
 /*Flexbox Starts Here*/
 .cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .flex-form {
   position: relative;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 20px solid rgba(0, 0, 0, 0.3); }
   .flex-form input[type="search"] {
-    flex-basis: 400px; }
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px; }
